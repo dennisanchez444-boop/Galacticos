@@ -1,10 +1,3 @@
-// test.js
-
-// Supongamos que existe una función generarSaludo
-// Si no está en otro archivo, puedes definirla así para probar:
-function generarSaludo(nombre, apellido) {
-  return Hola +{nombre} +{apellido}
-}
 
 // Función principal que toma los valores de las cajas de texto
 function saludar() {
@@ -15,6 +8,12 @@ function saludar() {
   // Llama a generarSaludo y guarda el resultado
   let saludo = generarSaludo(nombre, apellido);
 
-  // Imprime el resultado en consola
-  console.log(saludo);
+  // Imprime el resultado en h4
+    mostrarTexto("lblResultado",saludo);
+}
+
+mostrarTexto=function(idComponente,mensaje){
+    let componente;
+    componente=document.getElementById(idComponente);
+    componente.innerText=mensaje;
 }
