@@ -3,12 +3,18 @@
     <head>
         <script src="serviciosTest.js"></script>
         <script src="test.js"></script>
+        <link rel="stylesheet" href="test.css"/>
     </head>
     <body>
-        <input type="text" id="txtNombre"/>
-        <input type="text" id="txtApellido"/>
-        <h4 id="lblResultado"></h4>
-        <input type="button" value="SALUDAR" onclick="saludar();"/>
-
+        <div class="caja">
+           <input type="text" id="txtNombre"/>
+           <input type="text" id="txtApellido"/>
+        </div>
+        <div class="res">
+           <h4 id="lblResultado"></h4>
+        </div>
+        <div class="boton">
+           <input type="button" value="SALUDAR" onclick="saludar();"/>
+        </div>
     </body>
 </html>
